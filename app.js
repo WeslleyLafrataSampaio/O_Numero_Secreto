@@ -8,7 +8,7 @@
 //executa as váriaveis que precisamso.
 
 // Configurações e variáveis globais
-const TOTAL_NUMEROS_POSSIVEIS = 100;
+const TOTAL_NUMEROS_POSSIVEIS = 1000;
 let listaNumerosSorteados = [];
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
