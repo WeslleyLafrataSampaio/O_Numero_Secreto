@@ -67,7 +67,7 @@ function gerarNumeroAleatorio() {
 function verificarChute() {
   let chute = Number(document.querySelector("input").value);
 
-  if (chute < 1 || chute > 100) {
+  if (chute < 1 || chute > TOTAL_NUMEROS_POSSIVEIS) {
     exibirTextoNaTela("p", `Por favor, digite um número entre 1 e ${TOTAL_NUMEROS_POSSIVEIS}.`);
     limparCampo();
     return;
