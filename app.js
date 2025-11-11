@@ -8,7 +8,7 @@
 //executa as váriaveis que precisamso.
 
 // Configurações e variáveis globais
-const TOTAL_NUMEROS_POSSIVEIS = 1000;
+const TOTAL_NUMEROS_POSSIVEIS = 100;
 let listaNumerosSorteados = [];
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
@@ -25,7 +25,7 @@ function exibirTextoNaTela(tag, texto) {
 function falar(texto) {
   const fala = new SpeechSynthesisUtterance(texto);
   fala.lang = "pt-BR";
-  fala.rate = 1.7;
+  fala.rate = 1.8;
   speechSynthesis.speak(fala);
 }
 
