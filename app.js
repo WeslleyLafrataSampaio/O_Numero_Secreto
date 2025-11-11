@@ -1,12 +1,3 @@
-//let titulo = document.querySelector("h1");
-//titulo.innerHTML = "O Número Secreto";
-
-//let paragrafo = document.querySelector("p");
-//paragrafo.innerHTML = "Escolha um número entre 1 e 100";
-
-//  Ao invés de reescrever diversas vezes o mesmo código, criamos uma função que
-//executa as váriaveis que precisamso.
-
 // Configurações e variáveis globais
 const TOTAL_NUMEROS_POSSIVEIS = 100;
 let listaNumerosSorteados = [];
@@ -63,6 +54,14 @@ function gerarNumeroAleatorio() {
   return numeroEscolhido;
 }
 
+function reiniciarJogo() {
+  numeroSecreto = gerarNumeroAleatorio();
+  tentativas = 1;
+  iniciarJogo();
+  limparCampo();
+  document.getElementById("reiniciar").setAttribute("disabled", true);
+}
+
 // Função principal de verificação
 function verificarChute() {
   let chute = Number(document.querySelector("input").value);
@@ -88,12 +87,4 @@ function verificarChute() {
   }
 
   tentativas++;
-}
-
-function reiniciarJogo() {
-  numeroSecreto = gerarNumeroAleatorio();
-  tentativas = 1;
-  iniciarJogo();
-  limparCampo();
-  document.getElementById("reiniciar").setAttribute("disabled", true);
 }
