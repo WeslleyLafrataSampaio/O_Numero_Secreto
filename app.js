@@ -25,7 +25,7 @@ function exibirTextoNaTela(tag, texto) {
 function falar(texto) {
   const fala = new SpeechSynthesisUtterance(texto);
   fala.lang = "pt-BR";
-  fala.rate = 1.8;
+  fala.rate = 2.0;
   speechSynthesis.speak(fala);
 }
 
